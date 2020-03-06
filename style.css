@@ -1,0 +1,69 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  height: 100vh;
+}
+
+main {
+  background-image: url(./images/background.jpg);
+  width: 80vw;
+  height: 100vh;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "album"
+    "text";
+  row-gap: 0px;
+  justify-items: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.album {
+  width: 38%;
+  margin-top: 65px;
+  grid-area: album;
+}
+
+p {
+  grid-area: text;
+  font-size: 2.5rem;
+  font-family: "Merriweather", serif;
+  font-weight: lighter;
+  background: -webkit-linear-gradient(rgb(242, 173, 27), rgb(155, 35, 31));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+div.bar {
+  position: relative;
+  height: 100%;
+  background: linear-gradient(to bottom, rgb(242, 173, 27), rgb(155, 35, 31));
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  width: 20%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+.icons {
+  width: 2.2rem;
+  transition: ease-in-out 0.7s;
+}
+
+.icons:hover {
+  transform: scale(1.5);
+  transition: ease-in-out 0.7s;
+}
+
+#facebook {
+  float: left;
+  align-self: center;
+}
