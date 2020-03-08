@@ -25,11 +25,11 @@ main {
   position: relative;
   display: grid;
   background-image: url(./images/background.jpg);
-  background-size: contain;
+  background-size: cover;
+  background-repeat: no-repeat;
   height: 100%;
   width: 100%;
   grid-area: leftpane;
-
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr;
   grid-template-areas:
@@ -41,7 +41,7 @@ main {
 
 .album {
   position: relative;
-  margin-top: 130px;
+  top: 12vh;
   grid-area: album;
   width: 500px;
 }
@@ -55,6 +55,7 @@ p {
   background: -webkit-linear-gradient(rgb(242, 173, 27), rgb(155, 35, 31));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  top: 14vh;
 }
 
 div.bar {
@@ -76,7 +77,7 @@ div.links {
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   justify-items: center;
   align-items: center;
-  margin-top: 190px;
+  margin-top: 20vh;
 }
 
 .icons {
