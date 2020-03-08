@@ -1,8 +1,9 @@
 body {
   margin: 0px;
   padding: 0px;
-  width: 100%;
-  height: 100vh;
+  min-width: 100%;
+
+  min-height: 100%;
 }
 
 main {
@@ -24,7 +25,7 @@ main {
   position: relative;
   display: grid;
   background-image: url(./images/background.jpg);
-  background-size: cover;
+  background-size: contain;
   height: 100%;
   width: 100%;
   grid-area: leftpane;
@@ -40,9 +41,9 @@ main {
 
 .album {
   position: relative;
-  margin-top: 10%;
+  margin-top: 130px;
   grid-area: album;
-  width: 38%;
+  width: 500px;
 }
 
 p {
@@ -75,7 +76,7 @@ div.links {
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   justify-items: center;
   align-items: center;
-  margin-top: 60%;
+  margin-top: 190px;
 }
 
 .icons {
