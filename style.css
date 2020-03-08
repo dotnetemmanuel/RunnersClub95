@@ -6,6 +6,8 @@ body {
   min-height: 100%;
 }
 
+/* DESKTOP*/
+
 main {
   width: 100vw;
   height: 100vh;
@@ -89,3 +91,55 @@ div.links {
   transform: scale(1.5);
   transition: ease-in-out 0.7s;
 }
+
+/*TABLET*/
+
+@media screen and (max-width: 900px) {
+  main {
+    grid-template-columns: 100%;
+    grid-template-rows: 80% 20%;
+    grid-template-areas:
+      "leftpane"
+      "linkbar";
+  }
+
+  .album {
+    position: relative;
+    top: 6vh;
+    grid-area: album;
+    width: 450px;
+  }
+
+  p {
+    font-size: 2rem;
+    top: 8vh;
+  }
+
+  div.bar {
+    position: relative;
+    grid-template-areas: "links";
+    height: 100%;
+    width: 100%;
+  }
+
+  div.links {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin-top: 4vh;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-items: center;
+  }
+
+  .icons {
+    width: 2rem;
+  }
+
+  .icons:hover {
+    transform: scale(1.3);
+  }
+}
+
+/*MOBILE*/
