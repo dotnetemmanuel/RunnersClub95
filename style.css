@@ -6,29 +6,47 @@ body {
 }
 
 main {
-  background-image: url(./images/background.jpg);
-  width: 80vw;
+  width: 100vw;
   height: 100vh;
-
+  position: relative;
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 80% 20%;
   grid-template-rows: 1fr 1fr;
-  grid-template-areas:
-    "album"
-    "text";
+  grid-template-areas: "leftpane linkbar";
+  column-gap: 0;
   row-gap: 0px;
   justify-items: center;
   align-items: center;
   overflow: hidden;
 }
 
+.leftpane {
+  position: relative;
+  display: grid;
+  background-image: url(./images/background.jpg);
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  grid-area: leftpane;
+
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "album"
+    "text";
+  justify-items: center;
+  align-items: space-evenly;
+}
+
 .album {
-  width: 38%;
-  margin-top: 65px;
+  position: relative;
+  margin-top: 10%;
   grid-area: album;
+  width: 38%;
 }
 
 p {
+  position: absolute;
   grid-area: text;
   font-size: 2.5rem;
   font-family: "Merriweather", serif;
@@ -39,31 +57,33 @@ p {
 }
 
 div.bar {
+  object-fit: cover;
   position: relative;
+  grid-area: linkbar;
   height: 100%;
   background: linear-gradient(to bottom, rgb(242, 173, 27), rgb(155, 35, 31));
   position: fixed;
   bottom: 0px;
   right: 0px;
   width: 20%;
+}
+
+div.links {
+  height: 60%;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   justify-items: center;
   align-items: center;
+  margin-top: 60%;
 }
 
 .icons {
   width: 2.2rem;
   transition: ease-in-out 0.7s;
-  align-items: space-evenly;
 }
 
 .icons:hover {
   transform: scale(1.5);
   transition: ease-in-out 0.7s;
-}
-
-#facebook {
-  float: left;
 }
