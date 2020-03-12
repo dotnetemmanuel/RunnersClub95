@@ -156,17 +156,12 @@ div.links {
 }
 @media screen and (max-width: 425px) {
   html {
-    height: 100%;
     overflow: hidden;
   }
 
   body {
     height: 100%;
     position: fixed;
-  }
-  main {
-    height: 100%;
-    overflow: hidden;
   }
 
   p {
