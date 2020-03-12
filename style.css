@@ -155,8 +155,13 @@ div.links {
   }
 }
 @media screen and (max-width: 425px) {
-  html {
-    height: 100vh;
+  html,
+  body {
+    height: 100%;
+  }
+
+  main {
+    height: 100%;
   }
 
   .album {
