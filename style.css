@@ -155,7 +155,7 @@ div.links {
   }
 }
 @media screen and (max-width: 425px) {
-  body {
+  html {
     height: 100%;
   }
 
