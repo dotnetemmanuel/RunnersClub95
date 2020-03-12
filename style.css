@@ -162,10 +162,11 @@ div.links {
 
   p {
     font-size: 1.5rem;
+    top: 11vh;
   }
   .album {
     position: relative;
-    top: 9vh;
+    top: 7vh;
     width: 300px;
   }
 }
