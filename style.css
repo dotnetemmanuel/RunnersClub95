@@ -160,7 +160,8 @@ div.links {
   }
 
   .leftpane {
-    height: 90vh;
+    height: 80vh;
+    overflow: hidden;
   }
 
   p {
