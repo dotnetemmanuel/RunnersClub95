@@ -158,6 +158,11 @@ div.links {
   main {
     height: 100%;
     overflow: hidden;
+    grid-template-columns: 100%;
+    grid-template-rows: 80% 10%;
+    grid-template-areas:
+      "leftpane"
+      "linkbar";
   }
 
   p {
