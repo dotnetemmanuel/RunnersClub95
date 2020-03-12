@@ -155,6 +155,10 @@ div.links {
   }
 }
 @media screen and (max-width: 425px) {
+  html {
+    height: 100%;
+  }
+
   .album {
     position: relative;
     top: 9vh;
