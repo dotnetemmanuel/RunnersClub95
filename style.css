@@ -155,13 +155,16 @@ div.links {
 }
 @media screen and (max-width: 425px) {
   .album {
-    position: relative;
     top: 9vh;
     width: 300px;
   }
 }
 
 @media screen and (max-width: 320px) {
+  .leftpane {
+    height: 80%;
+  }
+
   .album {
     position: relative;
     top: 9vh;
