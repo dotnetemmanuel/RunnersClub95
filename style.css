@@ -156,7 +156,8 @@ div.links {
 }
 @media screen and (max-width: 425px) {
   main {
-    height: 50vh;
+    height: 80%;
+    overflow: hidden;
   }
 
   .album {
