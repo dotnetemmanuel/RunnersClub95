@@ -161,6 +161,7 @@ div.links {
   }
 
   p {
+    position: absolute;
     font-size: 1.5rem;
     top: 9vh;
   }
