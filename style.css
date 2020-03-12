@@ -161,12 +161,11 @@ div.links {
     width: 300px;
   }
 
-  body {
-    margin: 0px;
-    padding: 0px;
-    min-width: 100%;
+  div.bar {
+    position: relative;
+    grid-template-areas: "links";
     height: 90%;
-    overflow: hidden;
+    width: 100%;
   }
 }
 
