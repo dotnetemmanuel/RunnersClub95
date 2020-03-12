@@ -150,6 +150,10 @@ div.links {
     width: 400px;
   }
 
+  main {
+    height: 100%;
+  }
+
   p {
     top: 11vh;
   }
