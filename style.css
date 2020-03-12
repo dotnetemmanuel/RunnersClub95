@@ -161,10 +161,9 @@ div.links {
     width: 300px;
   }
 
-  .leftpane {
-    height: 90%;
+  main{
+    height: 100%;
   }
-}
 
 @media screen and (max-width: 320px) {
   .album {
