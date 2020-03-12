@@ -155,13 +155,8 @@ div.links {
   }
 }
 @media screen and (max-width: 425px) {
-  html {
-    overflow: hidden;
-  }
-
-  body {
+  main {
     height: 100%;
-    position: fixed;
     overflow-y: scroll;
   }
 
