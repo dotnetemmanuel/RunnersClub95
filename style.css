@@ -160,6 +160,14 @@ div.links {
     top: 9vh;
     width: 300px;
   }
+
+  body {
+    margin: 0px;
+    padding: 0px;
+    min-width: 100%;
+
+    min-height: 90%;
+  }
 }
 
 @media screen and (max-width: 320px) {
