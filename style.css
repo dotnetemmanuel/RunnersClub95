@@ -161,6 +161,13 @@ div.links {
     overflow: hidden;
   }
 
+  body {
+    position: fixed;
+    -webkit-overflow-scrolling: touch;
+    overflow-x: auto;
+    overflow-y: scroll;
+  }
+
   main {
     height: 100%;
   }
