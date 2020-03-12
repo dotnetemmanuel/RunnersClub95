@@ -162,6 +162,7 @@ div.links {
   body {
     height: 100%;
     position: fixed;
+    overflow-y: scroll;
   }
 
   p {
