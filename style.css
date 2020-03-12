@@ -159,10 +159,7 @@ div.links {
     top: 9vh;
     width: 300px;
   }
-
-  html{
-    height: 100%;
-  }
+}
 
 @media screen and (max-width: 320px) {
   .album {
