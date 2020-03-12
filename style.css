@@ -155,9 +155,11 @@ div.links {
   }
 }
 @media screen and (max-width: 425px) {
+  body {
+    overflow: hidden;
+  }
   main {
     height: 94vh;
-    overflow: hidden;
   }
 
   .leftpane {
