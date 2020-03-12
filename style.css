@@ -160,6 +160,9 @@ div.links {
     overflow: hidden;
   }
 
+  p {
+    font-size: 1.7rem;
+  }
   .album {
     position: relative;
     top: 9vh;
