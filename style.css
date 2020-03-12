@@ -150,10 +150,6 @@ div.links {
     width: 400px;
   }
 
-  .leftpane {
-    height: 80%;
-  }
-
   p {
     top: 11vh;
   }
@@ -161,6 +157,10 @@ div.links {
 @media screen and (max-width: 425px) {
   main {
     height: 100%;
+  }
+
+  .leftpane {
+    height: 80%;
   }
 
   p {
