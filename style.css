@@ -150,6 +150,10 @@ div.links {
     width: 400px;
   }
 
+  .leftpane {
+    background-size: 100% 80%;
+  }
+
   p {
     top: 11vh;
   }
