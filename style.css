@@ -156,7 +156,7 @@ div.links {
 }
 @media screen and (max-width: 425px) {
   main {
-    height: 100%;
+    height: 80%;
     overflow: hidden;
   }
 
