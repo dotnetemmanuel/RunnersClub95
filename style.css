@@ -161,11 +161,8 @@ div.links {
     width: 300px;
   }
 
-  div.bar {
-    position: relative;
-    grid-template-areas: "links";
+  .leftpane {
     height: 90%;
-    width: 100%;
   }
 }
 
