@@ -29,7 +29,7 @@ main {
   background-image: url(./images/background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100%;
+  height: 100vh;
   width: 100%;
   grid-area: leftpane;
   grid-template-columns: 1fr;
@@ -143,6 +143,18 @@ div.links {
 }
 
 /*MOBILE*/
+
+@media screen and (max-width: 768px) {
+  .album {
+    width: 400px;
+    top: 12vh;
+  }
+
+  p {
+    top: 15vh;
+  }
+}
+
 @media screen and (max-width: 612px) {
   .album {
     position: relative;
@@ -156,29 +168,35 @@ div.links {
 }
 @media screen and (max-width: 425px) {
   main {
-    height: 94vh;
+    height: 100vh;
     overflow: hidden;
   }
 
   .leftpane {
-    height: 100%;
+    height: 100vh;
   }
 
   p {
-    font-size: 1.5rem;
-    top: 9vh;
+    font-size: 1.3rem;
+    top: 22vh;
   }
   .album {
     position: relative;
-    top: 7vh;
+    top: 20vh;
     width: 300px;
+  }
+
+  div.links {
+    width: 80%;
+  }
+  .icons {
+    width: 1.7rem;
   }
 }
 
 @media screen and (max-width: 320px) {
   .album {
     position: relative;
-    top: 9vh;
     width: 250px;
   }
 }
