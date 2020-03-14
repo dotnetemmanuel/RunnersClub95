@@ -92,8 +92,15 @@ div.links {
   transition: ease-in-out 0.7s;
 }
 
-/*TABLET*/
+/*MEDIA QUERIES*/
 
+/*Tablet*/
+
+@media screen and (max-width: 1024px) {
+  .album {
+    width: 400px;
+  }
+}
 @media screen and (max-width: 900px) {
   main {
     grid-template-columns: 100%;
@@ -105,14 +112,14 @@ div.links {
 
   .album {
     position: relative;
-    top: 6vh;
+    top: 17vh;
     grid-area: album;
-    width: 450px;
+    width: 400px;
   }
 
   p {
     font-size: 2rem;
-    top: 8vh;
+    top: 20vh;
   }
 
   div.bar {
@@ -142,28 +149,28 @@ div.links {
   }
 }
 
-/*MOBILE*/
+/*Mobile*/
 
 @media screen and (max-width: 768px) {
   .album {
     width: 400px;
-    top: 12vh;
+    top: 17vh;
   }
 
   p {
-    top: 15vh;
+    top: 20vh;
   }
 }
 
 @media screen and (max-width: 612px) {
   .album {
     position: relative;
-    top: 9vh;
-    width: 400px;
+    top: 20vh;
+    width: 350px;
   }
 
   p {
-    top: 11vh;
+    top: 20vh;
   }
 }
 @media screen and (max-width: 425px) {
@@ -196,7 +203,95 @@ div.links {
 
 @media screen and (max-width: 320px) {
   .album {
-    position: relative;
+    width: 150px;
+  }
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min--moz-device-pixel-ratio: 2),
+  only screen and (-o-min-device-pixel-ratio: 2/1),
+  only screen and (min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 192dpi),
+  only screen and (min-resolution: 2dppx) {
+  .album {
+    width: 400px;
+    top: 15vh;
+  }
+
+  p {
+    font-size: 1.5em;
+    top: 20vh;
+  }
+}
+
+@media only screen and (max-width: 411px),
+  (-webkit-min-device-pixel-ratio: 3.5),
+  only screen and (min--moz-device-pixel-ratio: 3.5),
+  only screen and (-o-min-device-pixel-ratio: 3.5/1),
+  only screen and (min-device-pixel-ratio: 3.5),
+  only screen and (min-resolution: 192dpi),
+  only screen and (min-resolution: 3.5dppx) {
+  .album {
+    width: 300px;
+    top: 20vh;
+  }
+}
+
+/*4K*/
+@media only screen and (min-width: 2560px) {
+  .album {
+    width: 400px;
+    top: 15vh;
+  }
+
+  p {
+    font-size: 2em;
+  }
+}
+
+/*iPhone5*/
+@media screen and (device-aspect-ratio: 40/71) {
+  .album {
     width: 250px;
+  }
+
+  p {
+    font-size: 1.1em;
+  }
+}
+
+/*iPad*/
+@media screen and (device-aspect-ratio: 3/4) {
+  .album {
+    width: 450px;
+  }
+
+  p {
+    font-size: 2em;
+  }
+}
+
+/*iPad Pro Landscape*/
+@media only screen and (min-device-width: 1366px) and (max-device-width: 1366px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+  .album {
+    width: 500px;
+    top: 15vh;
+  }
+
+  p {
+    font-size: 2.3em;
+  }
+}
+
+/*iPad Pro Portrait*/
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+  .album {
+    width: 550px;
+    top: 20vh;
+  }
+
+  p {
+    font-size: 2.8em;
+    top: 20vh;
   }
 }
