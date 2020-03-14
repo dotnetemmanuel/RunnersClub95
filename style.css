@@ -96,11 +96,11 @@ div.links {
 
 /*Tablet*/
 
-@media screen and (max-width: 1024px) {
+/*@media screen and (max-width: 1024px) {
   .album {
     width: 400px;
   }
-}
+}*/
 @media screen and (max-width: 900px) {
   main {
     grid-template-columns: 100%;
@@ -232,7 +232,12 @@ div.links {
   only screen and (min-resolution: 192dpi),
   only screen and (min-resolution: 3.5dppx) {
   .album {
-    width: 300px;
+    width: 45vh;
+    top: 15vh;
+  }
+
+  p {
+    font-size: 1.8em;
     top: 20vh;
   }
 }
@@ -264,10 +269,12 @@ div.links {
 @media screen and (device-aspect-ratio: 3/4) {
   .album {
     width: 450px;
+    top: 20vh;
   }
 
   p {
     font-size: 2em;
+    top: 20vh;
   }
 }
 
