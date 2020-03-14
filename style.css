@@ -283,15 +283,4 @@ div.links {
   }
 }
 
-/*iPad Pro Portrait*/
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
-  .album {
-    width: 550px;
-    top: 20vh;
-  }
 
-  p {
-    font-size: 2.8em;
-    top: 20vh;
-  }
-}
