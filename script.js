@@ -1,4 +1,4 @@
-var countDownDate = new Date("Mar 27, 2020").getTime();
+/*var countDownDate = new Date("Mar 27, 2020").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function() {
@@ -24,3 +24,4 @@ var x = setInterval(function() {
     document.getElementById("countdown").innerHTML = "New album out now";
   }
 }, 1000);
+*/
