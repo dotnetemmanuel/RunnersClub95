@@ -48,6 +48,10 @@ main {
   width: 500px;
 }
 
+a {
+  text-decoration: none;
+}
+
 p {
   position: absolute;
   grid-area: text;
